@@ -28,7 +28,7 @@ void Binary::chk_bin(){
 }
 
 void Binary::ones(){
-    chk_bin(); //Nesting, without object calling a function.
+    chk_bin(); //Nesting of member function, without object calling a function.
     for (int i = 0; i < s.length(); i++){
         if(s.at(i)=='0'){
             s.at(i) = '1';
@@ -49,7 +49,6 @@ void Binary::display(){
 int main(){
     Binary b;
     b.read();
-    // b.chk_bin();
     b.display();
     b.ones();
     b.display();
