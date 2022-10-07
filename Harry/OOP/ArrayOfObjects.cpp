@@ -1,3 +1,4 @@
+// This is not an example of array of objects.
 #include<iostream>
 using namespace std;
 
@@ -9,7 +10,7 @@ class Complex{
             a = v1;
             b = v2;
         }
-        void setDataBySum(Complex o1, Complex o2){
+        void setDataBySum(Complex o1, Complex o2){ // Getting Objects.
             a = o1.a + o2.a;
             b = o1.b + o2.b;
         }
@@ -18,14 +19,12 @@ class Complex{
         }
 }John, Mark, display;
 
-
-
 int main(){
     Mark.setData(2, 3);
     Mark.printComplexNumber();
     John.setData(4, 5);
     John.printComplexNumber();
-    display.setDataBySum(Mark, John);
+    display.setDataBySum(Mark, John); // Passing Objects.
     display.printComplexNumber();
     return 0;
 }
