@@ -1,0 +1,1 @@
+cout << "Your result is " << (maths + physics) / 2 << "%" << endl;

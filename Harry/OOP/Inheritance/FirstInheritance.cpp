@@ -25,8 +25,6 @@ int Base::getData2(){
     return data2;
 }
 
-
-
 /* -->Derived Class syntax
 class {{derived-class-name}} : {{visibility-mode}} {{base-class-name}}
 {
