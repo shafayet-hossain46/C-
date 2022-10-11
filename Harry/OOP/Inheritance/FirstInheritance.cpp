@@ -3,7 +3,7 @@ using namespace std;
 
 
 class Base{
-    int data1;
+    int data1; // private by default and is not inheritable
     public:
         int data2;
         void setData();
@@ -25,7 +25,22 @@ int Base::getData2(){
     return data2;
 }
 
-class Derived : public Base{
+
+
+/* -->Derived Class syntax
+class {{derived-class-name}} : {{visibility-mode}} {{base-class-name}}
+{
+    class members/methods/etc...
+}
+*/
+
+/* -->Notes
+1: Default visibility mode is private.
+2: Public visibility mode: Public members of the base class becomes the public members of the derived class. 
+3: Private visibility mode: Public members of the base class becomes the private members of the derived class.
+4: Private members of the base class are not inheritable.
+*/
+class Derived : public Base{ // Class is being derived publicly
     int data3;
     public:
         void proccess();
