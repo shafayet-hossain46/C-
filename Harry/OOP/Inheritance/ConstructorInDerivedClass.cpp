@@ -43,10 +43,10 @@ class Base2{
         }
 };
 
-class Derived: public Base2, public Base1{
+class Derived: public Base2, public Base1{ // Here the order of calling constructor will be changed.
     int derived1, derived2;
     public:
-        Derived(int a, int b, int c, int d) : Base2(b), Base1(a)
+        Derived(int a, int b, int c, int d) : Base2(b), Base1(a) // Here the order of calling constructor will not be changed.
         {
             derived1 = c;
             derived2 = d;
