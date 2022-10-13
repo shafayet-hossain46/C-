@@ -51,7 +51,6 @@ class Result : public Test, public Sports{
         }
 };
 
-
 int main()
 {
     Result John;
