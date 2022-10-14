@@ -1,3 +1,10 @@
+/* -> Rules of virtual functions
+1. Virtual functions can not be static.
+2. They are accessed by the object pointers.
+3. A virtual function in base class might not be used.
+4. A virtual function can be a friend of another class.
+5. If a virtual function is defined in the base class, there is no necessity to redefine it in derived classes.
+*/
 #include<iostream>
 using namespace std;
 
@@ -68,3 +75,5 @@ int main(){
 
     return 0;
 }
+
+
